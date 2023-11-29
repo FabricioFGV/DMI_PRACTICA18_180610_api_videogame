@@ -4,7 +4,7 @@ import { router } from "./routes/playerRoute.js";
 import {Player, Game} from "./models/relationships.js";
 
 const api = new express();
-const port = 20032;
+const port = 18061;
 
 // Utiliza express.json() para analizar el cuerpo de la solicitud en formato JSON
 api.use(express.json());
