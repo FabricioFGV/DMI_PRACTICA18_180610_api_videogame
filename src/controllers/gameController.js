@@ -1,6 +1,6 @@
 // controllers/gameController.js
 import AbyssalDungeon from "../models/abyssaldungeon.js";
-import {dbConnection1} from "../config/db.js";
+import dbConnection1 from "../config/db.js";
 import { where } from "sequelize";
 
 const createGame = async (req, res) => {

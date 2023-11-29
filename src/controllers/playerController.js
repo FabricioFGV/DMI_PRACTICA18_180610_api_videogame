@@ -1,5 +1,5 @@
 import Player from "../models/player.js";
-import {dbConnection1} from "../config/db.js";
+import dbConnection1 from "../config/db.js";
 import { where } from "sequelize";
 
 const createPlayer = async (rq,rs)=> {

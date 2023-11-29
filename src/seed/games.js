@@ -2,7 +2,7 @@ const games = [{
     title: "Game #, level: #",
     startAt: Date.now(),
     endsAt: Date.now() + generateRandom(5000,300000),
-    score: generateRandom(0, 100000),
+    score: generateRandom(0, 100),
     player_ID: generateRandom(1,10)
 }]
 

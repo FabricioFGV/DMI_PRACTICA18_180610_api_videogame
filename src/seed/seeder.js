@@ -1,6 +1,6 @@
 import {exit} from 'node:process';
-import players from './players';
-import games from './games';
+import players from './players.js';
+import games from './games.js';
 import {Player, Game} from '../models/relationships.js'
 import db from '../config/db.js'
 
@@ -8,7 +8,7 @@ const importarDATOS = async () => {
     try{
         await db.authenticate()
 
-        await db.async()
+        await db.sync()
 
         await Promise.all([
             Player.bulkCreate(players),

@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/serve.js"
+    "start": "nodemon ./src/serve.js",
+    "db:importar":"node src/seed/seeder.js -i",
+    "db:eliminar":"node src/seed/seeder.js -e"
+
   },
   "keywords": [
     "API",
